@@ -1,196 +1,268 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8" />
-        <title>First-Website</title>
-        
-        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" href="style.css">
-       
-    </head>
-    <body>
-    <div class="container">
-    <div class="jumbotron">
-       <div class="container">
-           <div class="nav-wrapper">
-               <div class="left-side">
-                   <div class="nav-link-wrapper active-nav-link">
-                      <a href="index.html">Home</a>
-                   </div>  
-                   <div class="nav-link-wrapper">
-                       <a href="about.html">About</a>
-                   </div>
-               </div>
-               <div class="right-side">
-                   <div class="brand">
-                        <div>YOHANNES ANDU</div>
-                   </div>
-               </div>
-           </div>
-           <div class="content-wrapper">
-                <div class="portfolio-items-wrapper">
-                    <div class="portfolio-item-wrapper">
-                        <div class="portfolio-img-background" style="background-image: url(images/img1.jpg)"></div>
-                        <div class="img-text-wrapper">
-                            <div class="logo-wrapper">
-                                <img src="images/logos/logo1.png">
-                            </div>
-                            <div class="subtitle">
-                                Learn new things every time you code.
-                            </div>
+<html lang="en">
+<head>
+  <title>Portfolio Website-Yohannes</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- linking css file -->
+  <link rel="stylesheet" href="style.css">
+  <!-- bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top navbarScroll">
+        <div class="container">
+            <a class="navbar-brand" href="#">Yohannes</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+    </nav>
+    <section class="bgimage" id="home">
+        <div class="container-fluid">
+            <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
+                <h2 class="hero_title">Hi, it's me Yohannes</h2>
+                <p class="hero_desc">I am a Junior Software developer in London</p>
+            </div>
+            </div>
+        </div>
+    </section>
+   
+
+ 
+
+
+
+<!-- about section-->
+    <section id="about">
+        <div class="container mt-4 pt-4">
+            <h1 class="text-center">About Me</h1>
+            <div class="row mt-4">
+                <div class="col-lg-4">
+                    <img src="images/about.jpeg" class= "imageAboutPage" alt="">
+                </div>
+
+                <div class="col-lg-8">
+                    I am a self-taught, determined, and career-hungry software developer. My work ethic is primarily to focus on writing clean, elegant, and efficient code. 
+                    I am self-sufficient and have a deep understanding of HTML, CSS, JAVASCRIPT, and REACT. Over the last two years, I have engaged myself in working on small-scale websites/coding along with self-learning. I have a Microsoft Exam certification in HTML5 and CSS3 and Udemy certifications in React JS and WordPress. 
+                    Recently, I have obtained a certification on Software development using Java.
+                </div>
+            </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h1 class="text-center">Projects</h1>
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+                            <i class="fas servicesIcon fa-clock"></i>
+                            <h4 class="card-title mt-3">Gazzetter</h4>
+                            <p class="card-text mt-3">
+                                A full stack that uses php on the back end.When the pages loads it show the location of the 
+                                user.The left side,it has weather,Currency,Covid19 information,Country details panels.
+                            </p>
                         </div>
-                    </div>
-                    <div class="portfolio-item-wrapper">
-                        <div class="portfolio-img-background" style="background-image: url(images/img2.jpg)"></div>
-                        <div class="img-text-wrapper">
-                            <div class="logo-wrapper">
-                                <img src="images/logos/logo2.png">
-                            </div>
-                            <div class="subtitle">
-                                Java is a class-based language 
-                                designed to have as few implementation dependencies as possible.
-                            </div>
+                    </div>  
+                </div>
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+                            <i class='fas servicesIcon fa-layer-group'></i>
+                            <h4 class="card-title mt-3">Vending Machine</h4>
+                            <p class="card-text mt-3">
+                              This is java project.A user can select items listed on the vending machine.The machine sends
+                              messages for empty items or if user puts insufficient money.The machine also returns user change in 1p, 5p, 10p, 50p coins.
+                            </p>
                         </div>
-                    </div>
-                    <div class="portfolio-item-wrapper">
-                        <div class="portfolio-img-background" style="background-image: url(images/img3.jpg)"></div>
-                        <div class="img-text-wrapper">
-                            <div class="logo-wrapper">
-                                <img src="images/logos/logo3.png">
-                            </div>
-                            <div class="subtitle">
-                                Code Partners offers courses
-                                 in software development and mobile app development.
-                            </div>
+                    </div>  
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+                            <i class='far servicesIcon fa-check-circle'></i>
+                            <h4 class="card-title mt-3">Employee Management System</h4>
+                            <p class="card-text mt-3">.
+                                This is a Java Spring Boot full stack project.An employee can be created,added,updated 
+                                and deleted from the database.
+                            </p>
                         </div>
-                    </div>
-                    <div class="portfolio-item-wrapper">
-                        <div class="portfolio-img-background" style="background-image: url(images/img4.jpg)"></div>
-                        <div class="img-text-wrapper">
-                            <div class="logo-wrapper">
-                                <img src="images/logos/logo4.png">
-                            </div>
-                            <div class="subtitle">
-                                It is a 2 year project led by ALL DIGITAL 
-                                with 6 partner organisations.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="portfolio-item-wrapper">
-                        <div class="portfolio-img-background" style="background-image: url(images/img5.jpg)"></div>
-                        <div class="img-text-wrapper">
-                            <div class="logo-wrapper">
-                                <img src="images/logos/logo5.png">
-                            </div>
-                            <div class="subtitle">
-                                 allows users to create application software through graphical user interfaces.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="portfolio-item-wrapper">
-                        <div class="portfolio-img-background" style="background-image: url(images/img6.jpg)"></div>
-                        <div class="img-text-wrapper">
-                            <div class="logo-wrapper">
-                                <img src="images/logos/logo6.png">
-                            </div>
-                            <div class="subtitle">
-                                General Assembly is a private, for-profit education organization in early 2011
-                            </div>
-                        </div>
-                    </div>
-                    <div class="portfolio-item-wrapper">
-                        <div class="portfolio-img-background" style="background-image: url(images/img7.jpg)"></div>
-                        <div class="img-text-wrapper">
-                            <div class="logo-wrapper">
-                                <img src="images/logos/logo7.png">
-                            </div>
-                            <div class="subtitle">
-                                Coding House was a coding bootcamp in Silicon Valley, California. 
-                                that thought JavaScript and other technologies.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="portfolio-item-wrapper">
-                        <div class="portfolio-img-background" style="background-image: url(images/img8.jpg)"></div>
-                        <div class="img-text-wrapper">
-                            <div class="logo-wrapper">
-                                <img src="images/logos/logo8.png">
-                            </div>
-                            <div class="subtitle">
-                                Creative coding is a type of computer programming 
-                                to create something expressive.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="portfolio-item-wrapper">
-                        <div class="portfolio-img-background" style="background-image: url(images/img9.jpg)"></div>
-                        <div class="img-text-wrapper">
-                            <div class="logo-wrapper">
-                                <img src="images/logos/logo9.png">
-                            </div>
-                            <div class="subtitle">
-                                A free resource, CheckiO is a software engineering interview prep tool. 
-                                
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <div class="portfolio-item-wrapper">
-                        <div class="portfolio-img-background" style="background-image: url(images/img10.jpg)"></div>
-                        <div class="img-text-wrapper">
-                            <div class="logo-wrapper">
-                                <img src="images/logos/logo10.png">
-                            </div>
-                            <div class="subtitle">
-                                Speedcoding or Speedcode was the first high-level programming language 
-                                created for an IBM computer. 
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <div class="portfolio-item-wrapper">
-                        <div class="portfolio-img-background" style="background-image: url(images/img11.jpg)"></div>
-                        <div class="img-text-wrapper">
-                            <div class="logo-wrapper">
-                                <img src="images/logos/logo11.png">
-                            </div>
-                            <div class="subtitle">
-                                A positive peer-learning community developing skills in programming and statistics.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="portfolio-item-wrapper">
-                        <div class="portfolio-img-background" style="background-image: url(images/img12.jpg)"></div>
-                        <div class="img-text-wrapper">
-                            <div class="logo-wrapper">
-                                <img src="images/logos/logo12.png">
-                            </div>
-                            <div class="subtitle">
-                                CodeIgniter is an open-source software rapid development web framework, 
-                                
+                    </div>  
+                </div>
+            </div>
+
+     
+                
+    <!-- portfolio section-->
+    <section id="portfolio">
+        <div class="container mt-3">
+            <h1 class="text-center">Portfolio</h1>
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="images/bank1.png" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Bank App</h4>
+                            <p class="card-text"> A bank application implemented using Java-Spring boot.It has a functionality where a user can
+                                create, log in,transfer funds between checking and saving accounts and show the detail of the 
+                                transaction.</p>
+                            <div class="text-center">
+                                <a href="https://github.com/ymogos/BankApp" class="btn btn-success">Link</a>
                             </div>
                         </div>
                     </div>
                 </div>
 
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="images/amazon1.png" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Amazon Clone</h4>
+                            <p class="card-text"> A full e commerce full-stack project using REACT.It works as the real amazon website with google authontication and firebase storage</p>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-           </div>
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="images/blog1.png" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Blog</h4>
+                            <p class="card-text">This is a Java Spring Boot full stack project.It is a blog where a user can post,update
+                                and delete a post.It has time stamp where old posts authomatically gets removed in 30 days. </p>
+                            <div class="text-center">
+                                <a href="https://github.com/ymogos/Blog-post" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="images/whatsup.png" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Whatsup Clone</h4>
+                            <p class="card-text">  A full responsive whats up clone project using REACT.A user can sign using google authontication,create
+                                add groups and delete group.It has real time functionality that show the real time on the chat.</p>
+                            <div class="text-center">
+                                <a href="https://github.com/ymogos/whatsApp-clone" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="images/game1.png" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Game Pojects</h4>
+                            <p class="card-text"> This project includes two mini projects.A favourite Rock,Scissor and papar game and 
+                                a black card game.They are responsive and fully functional games done using HTML5,CSS3
+                                and JAVASCRIPT.In black card game,user plays against the computer.User has to select cards that maximum
+                            sum of cards should be less than 21 other wise uses busts up.There is counter for win,loss and draw play.A user
+                        can reset once a game is finished.</p>
+                            <div class="text-center">
+                                <a href="https://github.com/ymogos/JavaScript-Challenges" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="images/facebook.png" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Facebook Clone</h4>
+                            <p class="card-text"> A full responsive Facebook clone project using REACT.A user can sign using google authontication,create
+                                addand delete delete a post or image.It has real time functionality that show the real time on the chat.</p>
+                            <div class="text-center">
+                                <a href="https://github.com/ymogos/Covid19-clone" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- contact section-->
+    <section id="contact">
+        <div class="container mt-3 contactContent">
+            <h1 class="text-center">Contact Me</h1>
+
+            <div class="row mt-4">
+                <div class="col-lg-6">
+                    <!-- to edit google map goto https://www.embed-map.com type your location, generate html code and copy the html  -->
+                    <div style="max-width:100%;overflow:hidden;color:red;width:500px;height:500px;">
+                        <div id="embedmap-canvas" style="height:100%; width:100%;max-width:100%;">
+                            <iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=London,+UK&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8">
+                            </iframe>
+                        </div>
+                        <a class="googlemaps-html" href="https://www.embed-map.com" id="get-data-forembedmap">https://www.embed-map.com</a>
+                        <style>#embedmap-canvas img{max-width:none!important;background:none!important;font-size: inherit;font-weight:inherit;}
+                        </style>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <!-- form fields -->
+                    <form name="contact" netlify>
+                        <input type="text" class="form-control form-control-lg" placeholder="Name">
+                        <input type="email" class="form-control mt-3" placeholder="Email">
+                        <input type="text" class="form-control mt-3" placeholder="Subject">
+                        <div class="mb-3 mt-3">
+                            <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Project Details"></textarea>
+                        </div>
+                    </form>
+                    <button type="button" class="btn btn-success mt-3">Contact Me</button>
+                    
+                </div>
+
+            </div>
         </div>
+    </section>
+     <!-- footer section-->
+     <footer id="footer">
+        <div class="container-fluid">
+            <!-- social media icons -->
+            <div class="social-icons mt-4">
+                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+               <a href="https://www.linkedin.com/in/yohannes-andu/" target="_blank"><i class="fab fa-linkedin"></i></a>
+               
+            </div>
         </div>
-    </body>
-    <script>
-        const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
-        portfolioItems.forEach(portfolioItem => {
-            portfolioItem.addEventListener('mouseover', () =>{
-                portfolioItem.childNodes[1].classList.add('img-darken');
-            }) 
-            portfolioItem.addEventListener('mouseout', () =>{
-                portfolioItem.childNodes[1].classList.remove('img-darken');
-            }) 
-        })
-    </script>
+    </footer>
+    <script src="Script/script.js"></script>
+</body>
 </html>
